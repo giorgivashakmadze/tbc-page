@@ -48,10 +48,10 @@
     <!-- header end -->
 
     <!-- hero section -->
-    <div class="hero-section">
+    <div class="hero-container">
         <h3 class="hero-content">
-            <span class="hero-title">TBC x USAID</span> <br />
-            <span>ტექნოლოგიური განათლებისთვის</span>
+            <span class="hero-title1">TBC x USAID</span> <br />
+            <span class="hero-title2">ტექნოლოგიური განათლებისთვის</span>
         </h3>
     </div>
     <!-- hero end -->
@@ -62,10 +62,13 @@
           „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა საინფორმაციო
           ტექნოლოგიებით დაინტერესებულ ადამიანებს გთავაზობთ სრულად დაფინანსებულ
           ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს სხვადასხვა ICT
-          მიმართულებით. წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა
+        მიმართულებით.</p>
+        <p class="info-text"> წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა
           დასაქმდნენ თიბისისა და მის პარტნიორ კომპანიებში.
-        </p>
-        <a class="Tedu-btn" href="#">გაიგე მეტი</a>
+        </p> 
+        <div class="info-btn-box">
+          <a class="info-btn" href="#">გაიგე მეტი</a>
+        </div>
     </div>
     <!-- საინფორმაციო end -->
 
@@ -171,5 +174,78 @@
         </div>
       </section>
     <!-- სასწავლო კურსები end -->
-    <script type="module" src="/js/main.js" defer></script></body>
+
+    <!-- carousel section -->
+<section aria-label="Newest Photos" class="carousel-section">
+  <h4 class="carousel-title">პროექტის პარტნიორები</h4>
+  <div class="carousel" data-carousel>
+    <ul data-slides>
+      <li class="slide" data-slide-number="1" data-active>
+        <img
+          src="images/Asset 4_2x_edited.webp"
+          alt="Nature Image #1"
+          width="246"
+          height="74"
+        />
+        <img
+          src="/images/spaceint.webp"
+          alt="Nature Image #1"
+          width="241"
+          height="80"
+        />
+        <img
+          src="/images/tineti.webp"
+          alt="Nature Image #1"
+          width="250"
+          height="45"
+        />
+      </li>
+      <li class="slide" data-slide-number="2">
+        <img
+          src="images/tegeta.webp"
+          alt="Nature Image #2"
+          width="248"
+          height="71"
+        />
+        <img
+          src="images/spectre.webp"
+          alt="Nature Image #2"
+          width="187"
+          height="64"
+        />
+        <img
+          src="images/tbclizingi.webp"
+          alt="Nature Image #2"
+          width="314"
+          height="95"
+        />
+      </li>
+      <li class="slide" data-slide-number="3">
+        <img
+          class="ufc-logo"
+          src="images/ufc.webp"
+          alt="Nature Image #3"
+          width="227"
+          height="64"
+        />
+      </li>
+    </ul>
+    <div class="carousel-button prev" data-carousel-button="prev">
+      <img src="images/iconArrowRight.png" alt="right-arrow" />
+    </div>
+    <div class="carousel-button next" data-carousel-button="next">
+      <img src="/images/iconArrowLeft.png" alt="left-arrow" />
+    </div>
+    <ul class="carousel-dots">
+      <li data-carousel-button="0"><a href="#"></a></li>
+      <li data-carousel-button="1"><a href="#"></a></li>
+      <li data-carousel-button="2"><a href="#"></a></li>
+    </ul>
+  </div>
+ 
+</section>
+
+
+
+<script type="module" src="/js/main.js" defer></script></body>
 </html>
