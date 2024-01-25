@@ -1,14 +1,18 @@
-//scroll function for header
+// Importing modules
 import { handleScroll } from './scroll.js';
-
-document.addEventListener('DOMContentLoaded', () => {
-  handleScroll();
-});
-
-
-//carousel function
 import initializeCarousel from './carousel.js';
+import { toggleText } from './faqmodule.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    initializeCarousel();
+  // Handling scroll
+  handleScroll();
+
+  // Initializing carousel
+  initializeCarousel();
+
+  // Adding event listener for FAQ section
+  const faqQuestions = document.querySelectorAll('.faq-container .question-container');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => toggleText(question));
+  });
 });

@@ -59,7 +59,7 @@ ul{
   width: 100%;
   height: 84px;
   z-index: 1000;
-  transition: background-color  0.3s ease-in-out;
+  transition: background-color  0.4s ease-in-out;
 }
 
 .header.scrolled{
@@ -338,3 +338,157 @@ ul{
   cursor: pointer;
 }
 /* carousel end */
+
+/* FAQ */
+
+.faq-section {
+  font-family: 'fb1';
+  min-width: 1000px;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+}
+
+.faq-container {
+  width: 1000px;
+  padding: 50px;
+}
+
+.faq-title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.faq-title-box > h2 {
+  color: #f4f4f4;
+  font-weight: 200;
+}
+
+.faq-title-box > a {
+  text-decoration: none;
+  color: #00aef3;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.faq-title-box a:hover {
+  color: #00aef3ad;
+}
+
+.faq-container > ul > li {
+  list-style: none;
+  padding: 30px 0;
+  border-bottom: 1px solid #f4f4f427;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question-container > h3 {
+  color: #f4f4f4;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.question-container > i {
+  color: #f4f4f4;
+  font-size: 12px;
+}
+
+.answer-container {
+  margin-top: 30px;
+  color: #f4f4f4;
+  line-height: 1.6rem;
+}
+
+.answer-container span {
+  font-size: 14px;
+}
+
+.answer-container p {
+  font-size: 14px;
+}
+
+.answer-1 {
+  padding: 50px 20px;
+}
+/* faq end */
+
+/* footer section */
+footer {
+  min-width: 1000px;
+  height: 230px;
+  background-color: #1a1e1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  width: 1000px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+}
+
+.first > span {
+  color: #f4f4f4;
+  font-size: 14px;
+}
+
+.daculia {
+  margin: 30px 0;
+}
+
+.second {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  cursor: pointer;
+}
+
+.footer-btn {
+  height: 39px;
+  width: 169px;
+  font-size: 1rem;
+  background-color: #00aef3;
+  color: #f4f4f4;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-btn:focus {
+  outline: none;
+}
+
+.footer-btn:hover {
+  background-color: #f4f4f4;
+  color: #1a1e1f;
+}
