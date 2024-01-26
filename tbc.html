@@ -12,43 +12,39 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TBC x USAID</title>
 </head>
 <body>
-    <!-- header section -->
-    <header class="header" data-header="myHeader">
-        <div class="logo">
-            <a href="#">
-                <img src="images/tbc-logo.svg" alt="TBC logo">
-            </a>
-        </div>
-        <div class="menu-items">
-            <ul>
-                <li>
-                    <a href="#">
-                        მთავარი
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        TBC IT
-                    </a>
-                </li>
-                <li>
-                    <a class="active" href="tbc.html" >
-                        TBC x USAID
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        რისკები
-                    </a>
-                </li>
-            </ul>
-        </div>
-      </header>
+  <!-- header section -->
+  <header class="header" data-header="myHeader">
+      <!-- computer header -->
+      <div class="logo">
+          <a href="#">
+              <img src="images/tbc-logo.svg" alt="TBC logo">
+          </a>
+      </div>
+      <div class="menu-items">
+          <a href="#">მთავარი</a>
+          <a href="#">TBC IT</a>
+          <a class="active" href="tbc.html">TBC x USAID</a>
+          <a href="#">რისკები</a>
+      </div>
+      <button class="hamburger">
+				<div class="bar"></div>
+			</button>
+  </header>
+    <div class="mobile-nav">
+      <div class="menu-items">
+        <a href="#">მთავარი</a>
+        <a href="#">TBC IT</a>
+        <a class="active" href="tbc.html">TBC x USAID</a>
+        <a href="#">რისკები</a>
+    </div>
+  </div>
     <!-- header end -->
+  
     <main>
     <!-- hero section -->
     <div class="hero-container">
@@ -377,6 +373,5 @@
         </div>
       </div>
     </footer>
-
 <script type="module" src="/js/main.js" defer></script></body>
 </html>

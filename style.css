@@ -30,11 +30,12 @@
   --background-black: #161616;
   --white-text: #f4f4f4;
   --text-hover-blue: #00A3E0;
+  --header-size: 5.25rem;
 }
 
 body{
   background: var(--background-grey);
-  padding-top: 84px;
+  padding-top: var(--header-size);
 }
 a {
   text-decoration: none;
@@ -53,42 +54,48 @@ ul{
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: var(--background-header-black);
   width: 100%;
-  height: 84px;
-  z-index: 1000;
+  height: var(--header-size);
+  z-index: 4;
   transition: background-color  0.4s ease-in-out;
 }
 
-.header.scrolled{
+.header.scrolled {
   background-color: rgba(34, 34, 34, 0.95);
 }
-.header .menu-items ul{
+
+.header .menu-items {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  font-size: 14px;
+  gap: 1.25rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: var(--white-text);
-  padding-left: 30px;
+  padding-left: 4rem;
 }
-.header .menu-items li{
-  padding: 0 15px;
+
+.header .menu-items a {
+  text-decoration: none;
+  color: var(--white-text);
+  padding: 0 0.875rem;
 }
-.header .menu-items li a:hover{
+
+.header .menu-items a:hover {
   color: var(--text-hover-blue);
   transition: 0.4s;
 }
 
-.header .menu-items li a.active {
+.header .menu-items a.active {
   color: var(--text-hover-blue);
 }
+
 .header .logo img {
   transform: scale(1.15);
-  padding: 3px 0 0 10px;
+  padding: 0.3rem 18rem 0 2rem;
 }
+
 /* header end  */
 
 /* hero section styles */
@@ -103,18 +110,18 @@ ul{
 }
 
 .hero-content {
-  width: 980px;
-  height: 137.3px;
+  width: 61.25rem;
+  height: 8.57rem;
   font-weight: 400;
   font-size: 34px;
   white-space: nowrap;
   color: #f4f4f4;
-  line-height: 67.2px;
+  line-height: 4.2rem;
   font-family: '72e';
   
 }
 .hero-title1 {
-  font-size: 42px;
+  font-size: 2.625rem;
 }
 
 /* info section */
@@ -129,8 +136,8 @@ ul{
 }
 
 .info-text{
-  width: 1000px;
-  font-size: 28px;
+  max-width: 1000px;
+  font-size: 1.75rem;
   color: #f4f4f4;
   line-height: 1.6em;
 }
@@ -169,7 +176,7 @@ ul{
 
 .courses-container h4 {
   color: #f4f4f4;
-  font-size: 24px;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 
@@ -196,14 +203,14 @@ ul{
 }
 
 .course h5 {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #f4f4f4;
   margin: 30px 20px;
   font-weight: 400;
 }
 
 .course p {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #f4f4f4;
   margin: 0 20px 10% 20px;
 }
@@ -230,7 +237,7 @@ ul{
 .course-btn i {
   color: #00aef3;
   padding: 5px 5px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 550;
 }
 
@@ -250,7 +257,7 @@ ul{
 }
 
 .carousel-title {
-  font-size: 24px;
+  font-size: 1.75rem;
   color: var(--white-text);
   padding: 20px 0;
   width: 1000px;
@@ -372,7 +379,7 @@ ul{
   text-decoration: none;
   color: #00aef3;
   transition: color 0.3s ease;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
@@ -395,13 +402,13 @@ ul{
 
 .question-container > h3 {
   color: #f4f4f4;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
 .question-container > i {
   color: #f4f4f4;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .answer-container {
@@ -411,11 +418,11 @@ ul{
 }
 
 .answer-container span {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .answer-container p {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .answer-1 {
@@ -448,7 +455,7 @@ footer {
 
 .first > span {
   color: #f4f4f4;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .daculia {
