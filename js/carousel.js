@@ -13,7 +13,7 @@ function initializeCarousel() {
         }, 2500);
     }
 
-    // Stop auto-scrolling
+    // Stop auto-scrolling when any button is clicked
     function stopAutoScroll() {
         clearInterval(autoScrollInterval);
     }

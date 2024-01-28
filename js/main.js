@@ -1,11 +1,15 @@
 // Importing modules
+import { handleMobileScroll } from './scrollformobile.js';
 import { handleScroll } from './scroll.js';
 import initializeCarousel from './carousel.js';
 import { toggleText } from './faqmodule.js';
 
+
 document.addEventListener('DOMContentLoaded', () => {
   // Handling scroll
   handleScroll();
+  //mobile scroll
+  handleMobileScroll();
 
   // Initializing carousel
   initializeCarousel();
