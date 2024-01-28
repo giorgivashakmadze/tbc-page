@@ -5,13 +5,13 @@ function initializeCarousel() {
     const dots = document.querySelectorAll("[data-carousel] .carousel-dots li");
 
     let autoScrollInterval;
-
     // Start auto-scrolling initially
     function startAutoScroll() {
         autoScrollInterval = setInterval(() => {
             autoScroll(slides, dots);
-        }, 2500);
+        }, window.innerWidth <= 1000 ? 3000 : 2500);
     }
+    
 
     // Stop auto-scrolling when any button is clicked
     function stopAutoScroll() {
@@ -47,9 +47,18 @@ function initializeCarousel() {
             startAutoScroll();
         });
     });
+    // Add hover events to stop auto-scrolling
+    slides.addEventListener('mouseover', () => {
+        stopAutoScroll();
+    });
+
+    // Restart auto-scrolling when mouse leaves the slider
+    slides.addEventListener('mouseout', () => {
+        startAutoScroll();
+    });
 }
 
-// Auto-scroll carousel
+// Auto-scroll carousel , removes active from current slide and adds it to next slide , timing was defined previously (2500ms)
 function autoScroll(slides, dots) {
     const activeSlide = slides.querySelector("[data-active]");
     let currentIndex = [...slides.children].indexOf(activeSlide);

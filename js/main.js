@@ -3,6 +3,9 @@ import { handleMobileScroll } from './scrollformobile.js';
 import { handleScroll } from './scroll.js';
 import initializeCarousel from './carousel.js';
 import { toggleText } from './faqmodule.js';
+import { toggleMenu } from './menuModule.js';
+
+toggleMenu();
 
 
 document.addEventListener('DOMContentLoaded', () => {
